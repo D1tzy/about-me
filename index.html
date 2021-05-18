@@ -1,3 +1,4 @@
+<!-- HTML starter code -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,18 +7,27 @@
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-
+  
+  <!-- begin the body of the document -->
   <body>
+    
+    <!-- HEADER -->
     <header>
-
+      
+      <!-- h1 title with my name to begin the document -->
       <h1 id="top">Hayden Quale</h1>
-
+      
+      <!-- upload a picture of me -->
       <img src="me.png">
-
+      
+      <!-- h2 title saying what the page is about -->
       <h2>All about me!</h2>
-
+      
+      <!-- NAV -->
       <nav>
+          <!-- put each element in the nav in a div that can be styled and moved around -->
           <div class="nav-block">
+            <!-- each element in the nav will link to a certain part of the page -->
             <a href="#intro">Intro</a> 
           </div>
 
@@ -28,8 +38,12 @@
           <div class="nav-block">
             <a href="#contact">Contact</a> 
           </div>
+      <!-- END NAV -->
       </nav>
-
+      
+      <!-- NAV DESCRIPTIONS -->
+      
+      <!-- each description will again be in a div so they can be aligned with the links they are describing -->
       <div class="nav-description">
         <h3>Learn about who I am and my career so far</h3>
       </div>
@@ -41,27 +55,40 @@
       <div class="nav-description">
         <h3>Contact me!</h3>
       </div>
-
+    <!-- END HEADER AND NAV DESCRIPTIONS -->
     </header>
-
+    
+    
+    <!-- MAIN -->
     <main>
-
+      
+      <!-- insert a horizontal rule to separate the nav descriptions from the rest of the body -->
       <hr>
-
+      
+      <!-- create a div that can be used to style the margins of the page -->
       <div class="main-margin">
       </div>
-
+      
+      <!-- designate this section as the main content of the page -->
       <section class="main-content">
+        
+        <!-- each article will have an ID so that the links know where they are linking to -->
         <article id="intro">
+          
+          <!-- each article will have h2 header elements to show importance -->
           <h2>Introduction to me</h2>
           <p>Hi! My name is Hayden Quale, I am 20 years old, and I currently live in Manassas, Virginia, not far from DC. So far in my career, I've been blessed to work for two amazing companies.</p>
+          
+          <!-- order list listing places ive worked -->
           <ol>
             <li>Mod Pizza</li>
             <li>Target</li>
           </ol>
+          
           <p>Both have enriched me with amazing skills, such as working with customers and coworkers, management experience, and what it takes to be successful, both individually and as a team in the workplace.</p>
         </article>
-
+        
+        <!-- each article is separated by a horizontal rule -->
         <hr>
 
         <article id="about-me">
@@ -73,26 +100,38 @@
 
         <article id="contact">
           <h2>Contact me!</h2>
+          
+          <!-- unordered list listing ways to contact me -->
             <ul>
-              <li>Linkedin: NA</li>
+              <!-- I am currently not on linkedin -->
+              <li>Linkedin: NA; not currently on LinkedIn :(</li>
+              <!-- link to my github -->
               <li>Github: <a href="https://github.com/haydenquale" target="_blank">Github link</link></a></li>
+              <!-- this anchor tag will automatically open a blank email addressed to me when clicked -->
               <li>Email me!: <a href="mailto:hayden.quale@gmail.com">E-Mail</a></li>
             </ul>
 
         </article>
       </section>
-
+      
+      <!-- this is the other div to create and style the right margin -->
       <div class="main-margin">
       </div>
-
-      <hr>
       
+      <!-- one last horizontal rule to separate the body of the page from the footer -->
+      <hr>
+    
+    <!-- END MAIN -->
     </main>
 
+    <!-- FOOTER -->
     <footer>
-      <h2>Footer QuickLinks</h2>
+      <!-- h3 tags for the footer, cause its not as important as the rest of the page -->
+      <h3>Footer QuickLinks</h3>
       
+      <!-- FOOTER NAV -->
       <nav>
+        <!-- list items in the footer nav need to be styled slightly differently because this nav has 4 items instead of 3, give it a new class name -->
         <div class="nav-block-footer">
             <a href="#intro">Intro</a> 
         </div>
@@ -104,11 +143,15 @@
           <div class="nav-block-footer">
             <a href="#contact">Contact</a> 
           </div>
-
+          
+          <!-- this new link just links the user back to the top of the page -->
           <div class="nav-block-footer">
             <a href="#top">Back to top</a> 
           </div>
+      <!-- END FOOTER NAV -->
       </nav>
+      
+    <!-- END FOOTER -->
     </footer>
 
     <script src="script.js"></script>

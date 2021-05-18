@@ -1,16 +1,22 @@
+/* all text in the document should be centered */
 * {
   text-align: center;
   
 }
 
+/* my name and 'about me' should be white to contrast the blue background, all h1 tags (just my name), and all h2 elements within the header tag (just about me) 
+should be white */
 h1, header h2 {
   color: white;
 }
 
+/* set the header background to dark blue */
 header {
   background-color: darkblue;
 }
 
+/* for the nav elements, I wanted them side by side, to do this, I set their width to be a percentage of the container, then floated each object to the left,
+this made each object line up across the length of the screen. I also added a border to separate each component more clearly */
 .nav-block, .nav-block-footer {
   width: 33%;
   float: left;
@@ -18,18 +24,21 @@ header {
   border: 1px solid lightgray;
 }
 
-
+/* the footer nav block width should be lower since theres more elements that need to fit. also add margin spacing to separate text from the end of the page
+and the text that comes before it */
 .nav-block-footer {
   width: 24%;
   margin-bottom: 20px;
   margin-top: 10px;
 }
 
+/* format each horizontal rule to take up the width of the screen. add padding to further format the page properly */
 hr {
   padding: 3px;
   width: 100%;
 }
 
+/* each nav description again has a set width floated to the left. adding padding spaces each block of text out more */
 .nav-description {
   width: 32%;
   float: left;
@@ -37,6 +46,8 @@ hr {
   font-size: 15px;
 }
 
+/* format each div marked as main-margin to take up 10% of the screen, with a height of 600 px, a set background color, with extra
+margin on the bottom to space it out from the footer. each margin is floated to the left along with the main-content to create the body of the page */
 .main-margin {
   width: 10%;
   height: 600px;
@@ -45,11 +56,13 @@ hr {
   margin-bottom: 10px;
 }
 
+/* the main-content of the page should have a width of 80% since the two margins take up 10% each */
 .main-content {
   width: 80%;
   float: left;
 }
 
+/* the image of me is formatted here to have rounded edges, with a light gray border, and a set height. */
 img {
   border-radius: 10%;
   border: 2px solid lightgray;
@@ -57,20 +70,25 @@ img {
   width: 150px;
 }
 
+/* give each article spacing on the bottom so the text isnt so cramped */
 article {
   padding-bottom: 15px;
 }
 
+/* format each list item in both my ul and ol to center the bullets/numbers as well, and then re-center the text after the format shift
+using margin-right */
 li {
   list-style-position: inside;
   margin-right: 50px;
 }
 
+/* add padding to space the text out from the margins. also set the font family priority order */
 p {
   padding: 2px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* this final bit of css code styles the links whenever a certain action has occured/is occuring with the links on the page */
 a:link{color:blue}
 a:visited{color:red}
 a:hover{color: green}
